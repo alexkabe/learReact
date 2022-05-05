@@ -1,5 +1,13 @@
+class TextClass extends React.Component{
+
+  render(){
+    return       <input type="text" ref={this.props.fore}/>
+  }
+}
+
+
 const Text = React.forwardRef((props, ref) =>{
-  return       <input type="text" ref={ref}/>
+  return       <TextClass fore={ref}/>
 })
 
 class Home extends React.Component{
